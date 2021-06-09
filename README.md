@@ -19,14 +19,20 @@ https://platzi.com/clases/asincronismo-js/
 ### https://rickandmortyapi.com/api/character
 
 # Para ejecutar en Terminal
-en el archivo package.json
+en el archivo **package.json**
 se agregan estas lineas en scripts como shortcut para ejecutar en terminal:
 
- `"scripts": {
+ ```typescript
+"scripts": {
         "callback": "node src/callback/index.js",
         "callback:challenge": "node src/callback/challenge.js",
-        "promise": "node src/promise/index.js"`
-
+        "promise": "node src/promise/index.js",
+        "promise:challenge": "node src/promise/challenge.js",
+        "async": "node src/async/index.js",
+        "async:challenge": "node src/async/challenge.js"
+    },
+```
+****
 
 ### Contiene ejemplos de uso de: 
 * Callbacks.
@@ -121,3 +127,70 @@ Dimension C-137
 
 
 # Async/Await
+```
+c:\rtc\asincronismo>npm run async
+```
+## Salida en terminal
+
+```
+
+c:\rtc\asincronismo>npm run async
+
+> asincronismo@1.0.0 async c:\rtc\asincronismo
+> node src/async/index.js
+
+Before
+After
+Do something Async
+
+c:\rtc\asincronismo>
+```
+## Segundo ejemplo
+
+```
+c:\rtc\asincronismo>npm run async
+```
+## Salida en pantalla 
+
+```
+c:\rtc\asincronismo>npm run async
+
+> asincronismo@1.0.0 async c:\rtc\asincronismo
+> node src/async/index.js
+
+Before
+After
+Before 2
+after 2
+Se ejecutó el Async 1
+Se ejecutó Async 2
+
+c:\rtc\asincronismo>
+```
+
+## más Async/ await
+
+```
+c:\rtc\asincronismo>npm run async:challenge
+
+
+```
+Salida en Pantalla
+```
+c:\rtc\asincronismo>npm run async:challenge
+
+> asincronismo@1.0.0 async:challenge c:\rtc\asincronismo
+> node src/async/challenge.js
+
+Before
+After
+671
+Rick Sanchez
+Dimension C-137
+
+c:\rtc\asincronismo>
+
+```
+
+
+### FIN.
