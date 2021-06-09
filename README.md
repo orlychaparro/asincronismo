@@ -18,22 +18,106 @@ https://platzi.com/clases/asincronismo-js/
 ## The Rick and Morty API
 ### https://rickandmortyapi.com/api/character
 
+# Para ejecutar en Terminal
+en el archivo package.json
+se agregan estas lineas en scripts como shortcut para ejecutar en terminal:
 
-Contiene ejemplos de uso de: 
-Callbacks.
-Promises
-Async/Await
+ `"scripts": {
+        "callback": "node src/callback/index.js",
+        "callback:challenge": "node src/callback/challenge.js",
+        "promise": "node src/promise/index.js"`
 
-No contiene paginas Html con salida gráfica 
-los resultados en terminal de comandos
 
-Se ejecuta
-ejemplo de Callback:
-npm run callback 
+### Contiene ejemplos de uso de: 
+* Callbacks.
+* Promises
+* Async/Await
 
+
+> Obs.: No contiene paginas Html con salida gráfica 
+> los resultados en terminal de comandos
+
+
+# Callback:
+* npm run callback 
+* npm run callback:challenge
+
+```typescript
+C:\rtc\asincronismo>npm run callback
+```
+
+
+```typescript
+C:\rtc\asincronismo>npm run callback
+
+> asincronismo@1.0.0 callback C:\rtc\asincronismo
+> node src/callback/index.js
+
+8
+2021-06-08T20:04:23.453Z
+2021-06-08T20:04:26.471Z
+```
+## Otro ejemplo 
+```typescript
 npm run callback:challenge
+```
 
 
-Promises
+```typescript
+C:\rtc\asincronismo>npm run callback:challenge
 
-Async/Await
+> asincronismo@1.0.0 callback:challenge C:\rtc\asincronismo
+> node src/callback/challenge.js
+
+671
+Rick Sanchez
+Dimension C-137
+
+C:\rtc\asincronismo>
+```
+
+
+
+
+
+# Promises
+
+```typescript
+npm run promise
+```
+
+
+## salida en terminal    
+```typescript
+C:\rtc\asincronismo>npm run promise
+
+> asincronismo@1.0.0 promise C:\rtc\asincronismo
+> node src/promise/index.js
+
+Hey!!!
+True wil Happen 2
+Arrayof results [ 'Hey!!!', 'True wil Happen 2' ]
+
+C:\rtc\asincronismo>
+```
+
+ ## Segundo Ejemplo    
+
+```powershell
+c:\rtc\asincronismo>npm run promise:challenge
+```
+Salida en pantalla
+
+```powershell
+c:\rtc\asincronismo>npm run promise:challenge
+
+> asincronismo@1.0.0 promise:challenge c:\rtc\asincronismo
+> node src/promise/challenge.js
+
+671
+Rick Sanchez
+Dimension C-137
+```
+
+
+# Async/Await
